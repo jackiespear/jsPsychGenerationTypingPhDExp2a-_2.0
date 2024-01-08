@@ -550,7 +550,7 @@ var typing_feedback = {
 
 
 //Putting the study words and study instruction together for the PRACTICE phase
- var study_procedure_practice = {
+ var practice_study_procedure = {
    timeline: [study_practice, typing_feedback],
    randomize_order: true,
    timeline_variables: pracstudy,
@@ -829,7 +829,7 @@ var timeline = [];
 //timeline.push(welcome);
 //timeline.push(enter_full_screen);
 timeline.push(instructions);
-timeline.push(study_procedure_practice);
+//timeline.push(study_procedure_practice);
 timeline.push(practice_test_instructions_pre);
 timeline.push(practice_study_procedure);
 timeline.push(practice_test_instructions);
