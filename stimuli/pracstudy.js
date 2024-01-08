@@ -1,0 +1,18 @@
+pracstudy = [
+    {"stimulus":"<p style='font-size: 48px;'>BRICK - <span style='color: green'>TRICK</span></p>","data":{"type":"old","category":"produce","word":"TRICK"}},
+    {"stimulus":"<p style='font-size: 48px;'>WRITE - <span style='color: green'>FRIGHT</span></p>","data":{"type":"old","category":"produce","word":"FRIGHT"}},
+    {"stimulus":"<p style='font-size: 48px;'>SHOULDER - <span style='color: green'>BOULDER</span></p>","data":{"type":"old","category":"produce","word":"BOULDER"}},
+    {"stimulus":"<p style='font-size: 48px;'>ROASTER - <span style='color: green'>TOASTER</span></p>","data":{"type":"old","category":"produce","word":"TOASTER"}},
+    {"stimulus":"<p style='font-size: 48px;'>FOSTER - <span style='color: green'>ROSTER</span></p>","data":{"type":"old","category":"produce","word":"ROSTER"}},
+    {"stimulus":"<p style='font-size: 48px;'>COVER - <span style='color: green'>HOVER</span></p>","data":{"type":"old","category":"produce","word":"HOVER"}},
+    {"stimulus":"<p style='font-size: 48px;'>CLUSTER - <span style='color: green'>FLUSTER</span></p>","data":{"type":"old","category":"produce","word":"FLUSTER"}},
+    {"stimulus":"<p style='font-size: 48px;'>TIMBER - <span style='color: green'>LIMBER</span></p>","data":{"type":"old","category":"produce","word":"LIMBER"}},
+    {"stimulus":"<p style='font-size: 48px;'>TONER - <span style='color: red'>LONER</span></p>","data":{"type":"old","category":"read","word":"LONER"}},
+    {"stimulus":"<p style='font-size: 48px;'>WIPER - <span style='color: red'>VIPER</span></p>","data":{"type":"old","category":"read","word":"VIPER"}},
+    {"stimulus":"<p style='font-size: 48px;'>GRASS - <span style='color: red'>BRASS</span></p>","data":{"type":"old","category":"read","word":"BRASS"}},
+    {"stimulus":"<p style='font-size: 48px;'>SHEER - <span style='color: red'>CHEER</span></p>","data":{"type":"old","category":"read","word":"CHEER"}},
+    {"stimulus":"<p style='font-size: 48px;'>GRAVE - <span style='color: red'>BRAVE</span></p>","data":{"type":"old","category":"read","word":"BRAVE"}},
+    {"stimulus":"<p style='font-size: 48px;'>MONEY - <span style='color: red'>HONEY</span></p>","data":{"type":"old","category":"read","word":"HONEY"}},
+    {"stimulus":"<p style='font-size: 48px;'>POWER - <span style='color: red'>TOWER</span></p>","data":{"type":"old","category":"read","word":"TOWER"}},
+    {"stimulus":"<p style='font-size: 48px;'>REACH - <span style='color: red'>BEACH</span></p>","data":{"type":"old","category":"read","word":"BEACH"}},
+]
