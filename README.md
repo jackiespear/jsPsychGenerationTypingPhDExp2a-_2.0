@@ -1,4 +1,4 @@
-# jsPsychGenerationTypingPhDExp2a
+# jsPsychGenerationTypingPhDExp2a 2.0
 Experiment 2a of my PhD Thesis. Generation by typing using words from Johns and Swanson (1988).
 
 This experiment is a standard yes/no recognition memory test.
@@ -10,3 +10,5 @@ Both pure and mixed lists will be used.
 Each participant will be presented with a total of 40 word pairs during the study phase.
 
 Participants will then be tested for their recognition of the second word in each pair, one at a time, along with an equal amount of new, unstudied lures (80 words in total).
+
+A practice phase with typing feedback has been added from jsPsychGenerationTypingPhDExp2a. A demographic questionnaire along with a distraction question has also been added at the end of the experiment.
