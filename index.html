@@ -146,7 +146,7 @@ var text_read_category = 'read';
 
 //adding formatting to the produce words
 for (var i = 0; i < produce_words.length; i++) {
-  //produce_words[i].word2 = text_produce1 + produce_words[i].word2 + text_produce2;
+  produce_words[i].word2 = text_produce1 + produce_words[i].word2 + text_produce2;
   produce_words[i].type = text_produce_type;
   produce_words[i].category = text_produce_category;
 };
@@ -154,7 +154,7 @@ for (var i = 0; i < produce_words.length; i++) {
 
 //adding text to the read words
 for (var i = 0; i < read_words.length; i++) {
-  //read_words[i].word2 = text_read1 + read_words[i].word2 + text_read2;
+  read_words[i].word2 = text_read1 + read_words[i].word2 + text_read2;
   read_words[i].type = text_read_type;
   read_words[i].category = text_read_category;
 };
