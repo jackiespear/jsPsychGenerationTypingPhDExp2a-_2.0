@@ -146,7 +146,7 @@ var text_read_category = 'read';
 
 //adding formatting to the produce words
 for (var i = 0; i < produce_words.length; i++) {
-  produce_words[i].word2 = text_produce1 + produce_words[i].word2 + text_produce2;
+  //produce_words[i].word2 = text_produce1 + produce_words[i].word2 + text_produce2;
   produce_words[i].type = text_produce_type;
   produce_words[i].category = text_produce_category;
 };
@@ -154,7 +154,7 @@ for (var i = 0; i < produce_words.length; i++) {
 
 //adding text to the read words
 for (var i = 0; i < read_words.length; i++) {
-  read_words[i].word2 = text_read1 + read_words[i].word2 + text_read2;
+  //read_words[i].word2 = text_read1 + read_words[i].word2 + text_read2;
   read_words[i].type = text_read_type;
   read_words[i].category = text_read_category;
 };
@@ -188,6 +188,20 @@ for (var i = 0; i < study_words_mixed.length; i++) {
     study_words_mixed[i].word2 = study_words_mixed[i].word2.replace(/.{3}$/, "_ _ _?");
   }
 }
+
+
+//adding formatting to the generate words after _ _ _? has been added
+for (var i = 0; i < study_words_mixed.length; i++) {
+  if (study_words_mixed[i].category === "produce") {
+  study_words_mixed[i].word2 = text_produce1 + study_words_mixed[i].word2 + text_produce2;
+  }
+};
+
+for (var i = 0; i < study_words_mixed.length; i++) {
+  if (study_words_mixed[i].category === "read") {
+  study_words_mixed[i].word2 = text_read1 + study_words_mixed[i].word2 + text_read2;
+  }
+};
 
 
 console.table(study_words_mixed);
@@ -236,6 +250,21 @@ for (var i = 0; i < study_words_pureproduce.length; i++) {
   }
 }
 
+for (var i = 0; i < study_words_pureproduce.length; i++) {
+  if (study_words_pureproduce[i].category === "produce") {
+  study_words_pureproduce[i].word2 = text_produce1 + study_words_pureproduce[i].word2 + text_produce2;
+  }
+};
+
+
+
+//adding formatting to the generate words after _ _ _? has been added
+/*for (var i = 0; i < study_words_pureproduce.length; i++) {
+  if (study_words_pureproduce[i].category === "produce") {
+  study_words_pureproduce[i].word2 = text_produce1 + study_words_pureproduce[i].word2 + text_produce2;
+  }
+}; */
+
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////        Make study/test lists for the pure read list            ////////////////////// 
@@ -266,6 +295,12 @@ study_words_pureread = JSON.parse(study_words_pureread);
 // changing the category to be all read (no produce)
 study_words_pureread = JSON.stringify(study_words_pureread).replace(/produce/g, 'read');
 study_words_pureread = JSON.parse(study_words_pureread);
+
+for (var i = 0; i < study_words_pureread.length; i++) {
+  if (study_words_pureread[i].category === "read") {
+  study_words_pureread[i].word2 = text_read1 + study_words_pureread[i].word2 + text_read2;
+  }
+};
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //  Randomly Assign one of the three between-subjects conditions: mixed-list, pure-produce, or pure-read  //
@@ -833,7 +868,7 @@ var timeline = [];
 //timeline.push(welcome);
 //timeline.push(enter_full_screen);
 timeline.push(instructions);
-//timeline.push(study_procedure_practice);
+timeline.push(study_procedure_practice);
 timeline.push(practice_test_instructions_pre);
 timeline.push(practice_study_procedure);
 timeline.push(practice_test_instructions);
