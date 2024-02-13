@@ -306,7 +306,7 @@ for (var i = 0; i < study_words_pureread.length; i++) {
 //  Randomly Assign one of the three between-subjects conditions: mixed-list, pure-produce, or pure-read  //
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-var condition_assignment = jsPsych.randomization.sampleWithoutReplacement(['pureproduce', 'pureproduce', 'pureproduce'], 1)[0];
+var condition_assignment = jsPsych.randomization.sampleWithoutReplacement(['pureread', 'pureread', 'pureread'], 1)[0];
 jsPsych.data.addProperties({
   condition: condition_assignment
 });
